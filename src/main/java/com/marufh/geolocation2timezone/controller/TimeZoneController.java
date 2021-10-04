@@ -30,6 +30,6 @@ public class TimeZoneController {
 
     @GetMapping("/google/lat/{lat}/lon/{lon}")
     public TimeZoneDto getTimeZoneWithGoogle(@PathVariable double lat, @PathVariable double lon) {
-        return timeZoneService.getTimeZone(lat, lon, ServiceType.GOOGLE);
+        return timeZoneService.getTimeZoneWithGoogle(lat, lon);
     }
 }

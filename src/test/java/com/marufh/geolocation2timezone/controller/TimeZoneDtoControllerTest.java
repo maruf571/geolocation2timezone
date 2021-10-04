@@ -13,7 +13,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class TimeZoneControllerTest {
+public class TimeZoneDtoControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
@@ -25,7 +25,7 @@ public class TimeZoneControllerTest {
         this.mockMvc.perform(requestBuilder)
                 .andDo(print())
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.zone").value("Asia/Dhaka"));
+                .andExpect(jsonPath("$.timeZoneId").value("Asia/Dhaka"));
     }
 
     @Test
@@ -34,6 +34,6 @@ public class TimeZoneControllerTest {
         this.mockMvc.perform(requestBuilder)
                 .andDo(print())
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.zone").value("Asia/Dhaka"));
+                .andExpect(jsonPath("$.timeZoneId").value("Asia/Dhaka"));
     }
 }
