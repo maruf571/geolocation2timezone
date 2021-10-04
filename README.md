@@ -6,6 +6,7 @@ I have found two suitable offline solutions to get the timezone from geolocation
 
 * Timzeshape (Java lib, https://github.com/RomanIakovlev/timeshape)
 * TimeZoneMapper (A stand alone java class, https://github.com/drtimcooper/LatLongToTimezone)
+* Google timezone api
 
 ### How to run
 Using maven command for spring-boot 
@@ -28,7 +29,9 @@ Browse
 ```
 http://localhost:8080/timeshape/lat/52.0223/lon/5.16709
 http://localhost:8080/timezone/lat/52.0223/lon/5.16709
+http://localhost:8080/google/lat/52.0223/lon/5.16709
 ```
+** If you want to use google, you have to add google time zone api
 
 ### Request/Response
 Sample request
