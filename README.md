@@ -30,6 +30,23 @@ http://localhost:8080/timeshape/lat/52.0223/lon/5.16709
 http://localhost:8080/timezone/lat/52.0223/lon/5.16709
 ```
 
+### Request/Response
+Sample request
+```
+http://localhost:8080/timeshape/lat/23.999941/lon/90.420273
+```
 
+Sample response
+```
+{
+  "dstOffset": 0,
+  "rawOffset": 21600,
+  "status": "OK",
+  "timeZoneId": "Asia/Dhaka",
+  "timeZoneName": "Bangladesh Time",
+  "localTime": "01:33:00.61443",
+  "utcTime": "19:33:00.588057"
+}
+```
 
 
