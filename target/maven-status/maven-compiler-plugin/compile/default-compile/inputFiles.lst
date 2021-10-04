@@ -1,9 +1,0 @@
-/Users/mahmudul/maruf/geolocation-to-timezone/src/main/java/com/marufh/geolocation2timezone/controller/TimeZoneController.java
-/Users/mahmudul/maruf/geolocation-to-timezone/src/main/java/com/marufh/geolocation2timezone/controller/dto/TimeZoneDto.java
-/Users/mahmudul/maruf/geolocation-to-timezone/src/main/java/com/marufh/geolocation2timezone/thirdparty/TimezoneMapper.java
-/Users/mahmudul/maruf/geolocation-to-timezone/src/main/java/com/marufh/geolocation2timezone/service/TimeZoneService.java
-/Users/mahmudul/maruf/geolocation-to-timezone/src/main/java/com/marufh/geolocation2timezone/service/ServiceType.java
-/Users/mahmudul/maruf/geolocation-to-timezone/src/main/java/com/marufh/geolocation2timezone/Application.java
-/Users/mahmudul/maruf/geolocation-to-timezone/src/main/java/com/marufh/geolocation2timezone/config/BeanConfig.java
-/Users/mahmudul/maruf/geolocation-to-timezone/src/main/java/com/marufh/geolocation2timezone/controller/dto/GoogleResponse.java
-/Users/mahmudul/maruf/geolocation-to-timezone/src/main/java/com/marufh/geolocation2timezone/service/TimeZoneServiceImpl.java
