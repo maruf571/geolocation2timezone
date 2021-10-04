@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  geolocation2timezone:
+    image: maruf571/geolocation-to-timezone
+    ports:
+      - "8080:8080"

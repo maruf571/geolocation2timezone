@@ -36,6 +36,7 @@ com/marufh/geolocation2timezone/Application.class
 com/marufh/geolocation2timezone/thirdparty/TimezoneMapper$Initializer9.class
 com/marufh/geolocation2timezone/thirdparty/TimezoneMapper$Initializer22.class
 com/marufh/geolocation2timezone/thirdparty/TimezoneMapper$Initializer12.class
+com/marufh/geolocation2timezone/config/BeanConfig.class
 com/marufh/geolocation2timezone/controller/dto/TimeZoneDto.class
 com/marufh/geolocation2timezone/thirdparty/TimezoneMapper$Initializer27.class
 com/marufh/geolocation2timezone/thirdparty/TimezoneMapper$Initializer17.class

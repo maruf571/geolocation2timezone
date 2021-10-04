@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.marufh.geolocation2timezone.controller.TimeZoneControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.193 s - in com.marufh.geolocation2timezone.controller.TimeZoneControllerTest

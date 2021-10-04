@@ -1,1 +1,2 @@
-com/marufh/geolocation2timezone/ApplicationTests.class
+com/marufh/geolocation2timezone/service/TimeZoneServiceTest.class
+com/marufh/geolocation2timezone/controller/TimeZoneControllerTest.class

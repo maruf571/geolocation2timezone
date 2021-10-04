@@ -21,10 +21,9 @@ import java.time.ZoneId;
 @RequiredArgsConstructor
 public class TimeZoneServiceImpl implements TimeZoneService {
 
-    static final TimeZoneEngine engine = TimeZoneEngine.initialize();
-    static final OkHttpClient client = new OkHttpClient();
+    private final OkHttpClient client;
+    private final TimeZoneEngine engine;
     private final ObjectMapper objectMapper;
-
 
     @Override
     public TimeZoneDto getTimeZone(double lat, double lon, ServiceType serviceType) {
@@ -59,9 +58,11 @@ public class TimeZoneServiceImpl implements TimeZoneService {
         return ZoneId.of(TimezoneMapper.latLngToTimezoneString(lat, lon));
     }
 
+
+    // Please add google map key before using this one
     private ZoneId getTimeZoneWithGoogle(double lat, Double lon)  {
         Request request = new Request.Builder()
-                .url("https://maps.googleapis.com/maps/api/timezone/json?location="+lat+"%2C"+lon+"&timestamp=0&key=API_KEY")
+                .url("https://maps.googleapis.com/maps/api/timezone/json?location="+lat+"%2C"+lon+"&timestamp=0&key=API-KEY")
                 .method("GET", null)
                 .build();
 
@@ -73,6 +74,7 @@ public class TimeZoneServiceImpl implements TimeZoneService {
             e.printStackTrace();
         }
 
+        assert googleResponse != null;
         return ZoneId.of(googleResponse.getTimeZoneId());
     }
 
