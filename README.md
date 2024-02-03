@@ -1,4 +1,8 @@
 # geolocation-to-timezone
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=maruf571_geolocation2timezone&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=maruf571_geolocation2timezone)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=maruf571_geolocation2timezone&metric=bugs)](https://sonarcloud.io/summary/new_code?id=maruf571_geolocation2timezone)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=maruf571_geolocation2timezone&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=maruf571_geolocation2timezone)
+
 This project aims to explore solutions for retrieving the timezone from geolocation using Java.
 
 
@@ -6,7 +10,7 @@ This project aims to explore solutions for retrieving the timezone from geolocat
 We have identified two suitable offline solutions and a Google API for obtaining timezone information based on geolocation
 
 * Timzeshape (Java Library, https://github.com/RomanIakovlev/timeshape)
-* TimeZoneMapper (Java Class, https://github.com/drtimcooper/LatLongToTimezone
+* TimeZoneMapper (Java Class, https://github.com/drtimcooper/LatLongToTimezone)
 * Google Timezone API
 
 
@@ -27,15 +31,7 @@ Using docker-compose
 docker-compose up
 ```
 
-### Endpoints and Usage
-```
-http://localhost:8080/timeshape/lat/52.0223/lon/5.16709
-http://localhost:8080/timezone/lat/52.0223/lon/5.16709
-http://localhost:8080/google/lat/52.0223/lon/5.16709
-```
-** Note: If using Google, ensure that you have added the Google Time Zone API.
-
-### Request/Response
+## Endpoints and Usage
 Sample request
 ```
 http://localhost:8080/timeshape/lat/23.999941/lon/90.420273
