@@ -1,37 +1,39 @@
 # geolocation-to-timezone
-This is an investigation task to find out the suitable solution to get timezone from geolocation using java
+This project aims to explore solutions for retrieving the timezone from geolocation using Java.
 
-### Solution using 3rd party 
-I have found two suitable offline solutions to get the timezone from geolocation 
 
-* Timzeshape (Java lib, https://github.com/RomanIakovlev/timeshape)
-* TimeZoneMapper (A stand alone java class, https://github.com/drtimcooper/LatLongToTimezone)
-* Google timezone api
+### Solutions 
+We have identified two suitable offline solutions and a Google API for obtaining timezone information based on geolocation
+
+* Timzeshape (Java Library, https://github.com/RomanIakovlev/timeshape)
+* TimeZoneMapper (Java Class, https://github.com/drtimcooper/LatLongToTimezone
+* Google Timezone API
+
 
 ### How to run
-Using maven command for spring-boot 
+Run code locally:
 ```
-$ mvn spring-boot:run
-```
-
-Test
-```
-$ mvn test
+git clone https://github.com/maruf571/geolocation2timezone.git
+mvn spring-boot:run
 ```
 
-
-Using docker-compose:
-```angular2html
-$ docker-compose up
+Run test cases:
+```
+mvn test
 ```
 
-Browse
+Using docker-compose
+```
+docker-compose up
+```
+
+### Endpoints and Usage
 ```
 http://localhost:8080/timeshape/lat/52.0223/lon/5.16709
 http://localhost:8080/timezone/lat/52.0223/lon/5.16709
 http://localhost:8080/google/lat/52.0223/lon/5.16709
 ```
-** If you want to use google, you have to add google time zone api
+** Note: If using Google, ensure that you have added the Google Time Zone API.
 
 ### Request/Response
 Sample request
@@ -39,7 +41,7 @@ Sample request
 http://localhost:8080/timeshape/lat/23.999941/lon/90.420273
 ```
 
-Sample response
+Response
 ```
 {
   "dstOffset": 0,
