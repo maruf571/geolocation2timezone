@@ -14,24 +14,7 @@ We have identified two suitable offline solutions and a Google API for obtaining
 * Google Timezone API
 
 
-### How to run
-Run code locally:
-```
-git clone https://github.com/maruf571/geolocation2timezone.git
-mvn spring-boot:run
-```
-
-Run test cases:
-```
-mvn test
-```
-
-Using docker-compose
-```
-docker-compose up
-```
-
-## Endpoints and Usage
+## Usage
 Sample request
 ```
 http://localhost:8080/timeshape/lat/23.999941/lon/90.420273
@@ -48,6 +31,31 @@ Response
   "localTime": "01:33:00.61443",
   "utcTime": "19:33:00.588057"
 }
+```
+
+## Prerequisites
+* Java 17
+* Maven
+* Docker
+* Docker-compose
+* Google Timezone API (Optional)
+
+
+### How to run
+Run code locally:
+```
+git clone https://github.com/maruf571/geolocation2timezone.git
+mvn spring-boot:run
+```
+
+Run test cases:
+```
+mvn test
+```
+
+Using docker-compose
+```
+docker-compose up
 ```
 
 
