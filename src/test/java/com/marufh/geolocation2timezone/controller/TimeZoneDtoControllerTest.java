@@ -13,14 +13,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class TimeZoneDtoControllerTest {
+class TimeZoneDtoControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
 
 
     @Test
-    public void testTimeShape() throws Exception {
+    void testTimeShape() throws Exception {
         RequestBuilder requestBuilder = get("/timeshape/lat/23.8103/lon/90.4125");
         this.mockMvc.perform(requestBuilder)
                 .andDo(print())
@@ -29,7 +29,7 @@ public class TimeZoneDtoControllerTest {
     }
 
     @Test
-    public void testTimeZone() throws Exception {
+    void testTimeZone() throws Exception {
         RequestBuilder requestBuilder = get("/timezone/lat/23.8103/lon/90.4125");
         this.mockMvc.perform(requestBuilder)
                 .andDo(print())

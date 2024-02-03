@@ -1,20 +1,20 @@
 package com.marufh.geolocation2timezone.service;
 
 
-import com.marufh.geolocation2timezone.controller.dto.TimeZoneDto;
+import com.marufh.geolocation2timezone.dto.TimeZoneDto;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class TimeZoneDtoServiceTest {
+class TimeZoneDtoServiceTest {
 
     @Autowired
     private TimeZoneService timeZoneService;
 
     @Test
-    public void testTimeShape() {
+    void testTimeShape() {
         TimeZoneDto timeZoneDtoDto1 = timeZoneService.getTimeZone(23.8103, 90.4125, ServiceType.TIME_SHAPE);
         Assertions.assertEquals(timeZoneDtoDto1.getTimeZoneId(), "Asia/Dhaka");
         Assertions.assertEquals(timeZoneDtoDto1.getDstOffset(), 0);
@@ -37,7 +37,7 @@ public class TimeZoneDtoServiceTest {
 
 
     @Test
-    public void testTimeZone() {
+    void testTimeZone() {
         TimeZoneDto timeZoneDtoDto1 = timeZoneService.getTimeZone(23.8103, 90.4125, ServiceType.TIME_ZONE);
         Assertions.assertEquals(timeZoneDtoDto1.getTimeZoneId(), "Asia/Dhaka");
         Assertions.assertEquals(timeZoneDtoDto1.getDstOffset(), 0);

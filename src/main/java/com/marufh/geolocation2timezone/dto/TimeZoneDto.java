@@ -1,4 +1,4 @@
-package com.marufh.geolocation2timezone.controller.dto;
+package com.marufh.geolocation2timezone.dto;
 
 import lombok.Builder;
 import lombok.Data;

@@ -1,5 +1,5 @@
 # geolocation-to-timezone
-This is an investigation task to find out the suitable solution to get timezone from geolocaiton using java
+This is an investigation task to find out the suitable solution to get timezone from geolocation using java
 
 ### Solution using 3rd party 
 I have found two suitable offline solutions to get the timezone from geolocation 

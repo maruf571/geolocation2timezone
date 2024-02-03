@@ -1,6 +1,6 @@
 package com.marufh.geolocation2timezone.controller;
 
-import com.marufh.geolocation2timezone.controller.dto.TimeZoneDto;
+import com.marufh.geolocation2timezone.dto.TimeZoneDto;
 import com.marufh.geolocation2timezone.service.ServiceType;
 import com.marufh.geolocation2timezone.service.TimeZoneService;
 import lombok.RequiredArgsConstructor;

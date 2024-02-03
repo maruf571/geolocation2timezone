@@ -1,6 +1,5 @@
 package com.marufh.geolocation2timezone.config;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.squareup.okhttp.OkHttpClient;
 import net.iakovlev.timeshape.TimeZoneEngine;
 import org.springframework.context.annotation.Bean;
